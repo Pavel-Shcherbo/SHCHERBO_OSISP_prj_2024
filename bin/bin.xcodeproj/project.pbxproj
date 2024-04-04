@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BF7116D42BBF7386004F96DB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7116D32BBF7386004F96DB /* main.cpp */; };
+		BF7116DC2BBF73CA004F96DB /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7116DA2BBF73CA004F96DB /* functions.cpp */; };
+		BF7116E22BBF7595004F96DB /* menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7116E02BBF7595004F96DB /* menu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		BF7116D02BBF7386004F96DB /* bin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7116D32BBF7386004F96DB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BF7116DA2BBF73CA004F96DB /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		BF7116DB2BBF73CA004F96DB /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
+		BF7116E02BBF7595004F96DB /* menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = menu.cpp; sourceTree = "<group>"; };
+		BF7116E12BBF7595004F96DB /* menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = menu.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				BF7116D32BBF7386004F96DB /* main.cpp */,
+				BF7116DA2BBF73CA004F96DB /* functions.cpp */,
+				BF7116DB2BBF73CA004F96DB /* functions.hpp */,
+				BF7116E02BBF7595004F96DB /* menu.cpp */,
+				BF7116E12BBF7595004F96DB /* menu.hpp */,
 			);
 			path = bin;
 			sourceTree = "<group>";
@@ -120,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7116D42BBF7386004F96DB /* main.cpp in Sources */,
+				BF7116DC2BBF73CA004F96DB /* functions.cpp in Sources */,
+				BF7116E22BBF7595004F96DB /* menu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
