@@ -10,8 +10,9 @@
 #include <unistd.h>
 #include <vector>
 #include <sstream>
+#include <chrono>
+#include <thread>
 
-const std::string BASKET_FOLDER = "/Users/pavelshcherbo/Desktop/stud/bin";
 
 void createBasketFolder() {
     mkdir(BASKET_FOLDER.c_str(), 0777);
@@ -71,7 +72,6 @@ void restoreFromBasket() {
     clearBasketInfo.close();
 }
 
-
 void clearBasket() {
     std::string infoFilename = BASKET_FOLDER + "/" + "bin.info";
     std::ifstream basketInfo(infoFilename);
@@ -99,6 +99,7 @@ void clearBasket() {
     clearBasketInfo.close();
 }
 
+
 void displayBasketInfo() {
     std::string infoFilename = BASKET_FOLDER + "/" + "bin.info";
     std::ifstream basketInfo(infoFilename);
@@ -113,4 +114,14 @@ void displayBasketInfo() {
     }
 
     basketInfo.close();
+}
+
+void autoCleanBasket(int maxMemoryUsage, int autoCleanInterval) {
+    while (true) {
+        std::this_thread::sleep_for(std::chrono::seconds(autoCleanInterval));
+        // Add logic to check memory usage and clean basket if exceeds the limit
+        // Placeholder logic for demonstration
+        std::cout << "Auto cleaning basket..." << std::endl;
+        clearBasket();
+    }
 }

@@ -1,9 +1,13 @@
 #include "functions.hpp"
 #include "menu.hpp"
 #include <iostream>
+#include <thread>
 
 void menu() {
     createBasketFolder();
+    
+    std::thread autoCleanThread(autoCleanBasket, MAX_MEMORY_USAGE, AUTO_CLEAN_INTERVAL);
+
 
     int choice;
     do {
@@ -45,4 +49,5 @@ void menu() {
                 std::cout << "Неверный ввод! Пожалуйста, выберите существующий пункт." << std::endl;
         }
     } while (choice != 0);
+    autoCleanThread.join();
 }

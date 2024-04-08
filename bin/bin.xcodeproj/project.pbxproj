@@ -31,6 +31,7 @@
 		BF7116DB2BBF73CA004F96DB /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
 		BF7116E02BBF7595004F96DB /* menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = menu.cpp; sourceTree = "<group>"; };
 		BF7116E12BBF7595004F96DB /* menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = menu.hpp; sourceTree = "<group>"; };
+		BF85C47F2BC3871D000BDB76 /* bin.info */ = {isa = PBXFileReference; lastKnownFileType = text; path = bin.info; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 				BF7116DB2BBF73CA004F96DB /* functions.hpp */,
 				BF7116E02BBF7595004F96DB /* menu.cpp */,
 				BF7116E12BBF7595004F96DB /* menu.hpp */,
+				BF85C47F2BC3871D000BDB76 /* bin.info */,
 			);
 			path = bin;
 			sourceTree = "<group>";
