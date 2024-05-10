@@ -1,16 +1,8 @@
 #include "binCommands.h"
 #include "logActions.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <errno.h>
 
 #define BASKET_FOLDER "/Users/pavelshcherbo/Desktop/stud/bin"
 #define MAX_FILENAME_LENGTH 1024
-#define AUTO_CLEAN_INTERVAL (60 * 10 * 1)
 
 void addToBasket(const char* filename) {
     char newFilename[1024];
@@ -99,5 +91,3 @@ void autoCleanBasket() {
         logAction("Корзина очищена автоматически", "");
     }
 }
-
-

@@ -1,7 +1,10 @@
 #ifndef MENU_H
 #define MENU_H
 
-#include "functions.h"
+#include "binCommands.h"
+#include "logActions.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 void menu();
 

@@ -1,9 +1,4 @@
 #include "logActions.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <errno.h>
-#include <time.h>
 
 void logAction(const char* action, const char* filename) {
     FILE* logFile = fopen("log.txt", "a");

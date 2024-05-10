@@ -5,12 +5,15 @@
 #include <stdlib.h>
 #include <pthread.h>
 
+#define BASKET_FOLDER "/Users/pavelshcherbo/Desktop/stud/bin"
+
 void createBasketFolder() {
     if (mkdir(BASKET_FOLDER, 0777) != 0 && errno != EEXIST) {
         fprintf(stderr, "Ошибка создания папки корзины: %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }
 }
+
 void* autoCleanThread(void* arg) {
     autoCleanBasket();
     return NULL;
