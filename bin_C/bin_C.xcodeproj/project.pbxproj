@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF746F7F2BEEAA390049DC2A /* binCommands.c in Sources */ = {isa = PBXBuildFile; fileRef = BF746F7E2BEEAA390049DC2A /* binCommands.c */; };
+		BF746F822BEEAA5A0049DC2A /* logActions.c in Sources */ = {isa = PBXBuildFile; fileRef = BF746F812BEEAA5A0049DC2A /* logActions.c */; };
 		BF7931B12BE86ED8008A1EDF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BF7931B02BE86ED8008A1EDF /* main.c */; };
-		BF7931B92BE86EEE008A1EDF /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = BF7931B82BE86EEE008A1EDF /* functions.c */; };
 		BF7931BC2BE86EFA008A1EDF /* menu.c in Sources */ = {isa = PBXBuildFile; fileRef = BF7931BB2BE86EFA008A1EDF /* menu.c */; };
 		BF7931BE2BE87232008A1EDF /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BF7931BD2BE87232008A1EDF /* Makefile */; };
 /* End PBXBuildFile section */
@@ -26,10 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF746F7D2BEEAA390049DC2A /* binCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binCommands.h; sourceTree = "<group>"; };
+		BF746F7E2BEEAA390049DC2A /* binCommands.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = binCommands.c; sourceTree = "<group>"; };
+		BF746F802BEEAA5A0049DC2A /* logActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logActions.h; sourceTree = "<group>"; };
+		BF746F812BEEAA5A0049DC2A /* logActions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = logActions.c; sourceTree = "<group>"; };
 		BF7931AD2BE86ED8008A1EDF /* bin_C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bin_C; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7931B02BE86ED8008A1EDF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		BF7931B72BE86EEE008A1EDF /* functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
-		BF7931B82BE86EEE008A1EDF /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
 		BF7931BA2BE86EFA008A1EDF /* menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = menu.h; sourceTree = "<group>"; };
 		BF7931BB2BE86EFA008A1EDF /* menu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = menu.c; sourceTree = "<group>"; };
 		BF7931BD2BE87232008A1EDF /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -66,11 +69,13 @@
 			isa = PBXGroup;
 			children = (
 				BF7931B02BE86ED8008A1EDF /* main.c */,
-				BF7931B72BE86EEE008A1EDF /* functions.h */,
-				BF7931B82BE86EEE008A1EDF /* functions.c */,
 				BF7931BA2BE86EFA008A1EDF /* menu.h */,
 				BF7931BB2BE86EFA008A1EDF /* menu.c */,
 				BF7931BD2BE87232008A1EDF /* Makefile */,
+				BF746F7D2BEEAA390049DC2A /* binCommands.h */,
+				BF746F7E2BEEAA390049DC2A /* binCommands.c */,
+				BF746F802BEEAA5A0049DC2A /* logActions.h */,
+				BF746F812BEEAA5A0049DC2A /* logActions.c */,
 			);
 			path = bin_C;
 			sourceTree = "<group>";
@@ -133,8 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7931B12BE86ED8008A1EDF /* main.c in Sources */,
-				BF7931B92BE86EEE008A1EDF /* functions.c in Sources */,
+				BF746F7F2BEEAA390049DC2A /* binCommands.c in Sources */,
 				BF7931BE2BE87232008A1EDF /* Makefile in Sources */,
+				BF746F822BEEAA5A0049DC2A /* logActions.c in Sources */,
 				BF7931BC2BE86EFA008A1EDF /* menu.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

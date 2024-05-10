@@ -1,4 +1,20 @@
 #include "menu.h"
+#include "binCommands.h"
+#include "logActions.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+void createBasketFolder() {
+    if (mkdir(BASKET_FOLDER, 0777) != 0 && errno != EEXIST) {
+        fprintf(stderr, "Ошибка создания папки корзины: %s\n", strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+}
+void* autoCleanThread(void* arg) {
+    autoCleanBasket();
+    return NULL;
+}
 
 void menu() {
     createBasketFolder();
